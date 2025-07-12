@@ -10,7 +10,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 set(SOURCES, "src/main.c")
 file(GLOB SOURCES "src/*.c")
 add_library(stepCountingAlgo ${SOURCES})
-target_link_libraries(stepCountingAlgoTest m)
+target_link_libraries(stepCountingAlgo m)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
